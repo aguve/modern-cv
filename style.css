@@ -324,6 +324,25 @@ body {
   border: 1px solid var(--primary);
 }
 
+.other-info-list {
+  list-style: none;
+  padding: 0;
+}
+
+.other-info-list li {
+  padding: 0.6rem 1rem;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--text-light);
+}
+
+.other-info-list li:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 800px) {
   .cv-wrapper {
     grid-template-columns: 1fr;
