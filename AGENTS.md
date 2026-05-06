@@ -13,6 +13,15 @@ Static HTML/CSS CV site. No build step, no dependencies, no test suite.
 - Never force push to main; warn user if requested
 - Push to remote only when explicitly asked
 
+### Push Credentials
+- Credentials stored in `.git-credentials` (gitignored, never commit this file)
+- File contains: `GIT_USERNAME` and `GIT_TOKEN`
+- When pushing:
+  1. Read `.git-credentials` to get username and token
+  2. Set remote URL with credentials: `git remote set-url origin https://<USERNAME>:<TOKEN>@github.com/aguve/modern-cv.git`
+  3. Run `git push`
+  4. Remove credentials from URL: `git remote set-url origin https://github.com/aguve/modern-cv.git`
+
 - Commit Types:
 Type     Purpose
 feat     New feature
