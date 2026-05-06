@@ -8,7 +8,6 @@ Static HTML/CSS CV site. No build step, no dependencies, no test suite.
 - Plain HTML/CSS, no framework
 
 ## Git
-- When do commit, ask user for description
 - Commit only when explicitly requested by the user
 - Commit messages: concise, present tense, describe the exact change (e.g., "Update name to Andreu Guzman")
 - Never force push to main; warn user if requested
@@ -30,7 +29,7 @@ revert     Revert commit
 - Generate Commit Message
     Type: What kind of change is this?
     Scope: What area/module is affected?
-    Description: One-line summary of what changed (present tense, imperative mood, <72 chars)
+    Description: One-line summary of what changed (present tense, imperative mood, <72 chars). Suggest one or two, but let the user write one if wants.
 
 - Execute Commit
 
