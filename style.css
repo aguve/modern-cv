@@ -91,6 +91,7 @@ body {
   padding: 0.4rem 1rem;
   border-radius: 20px;
   cursor: pointer;
+  font-family: inherit;
   font-size: 0.8rem;
   font-weight: 600;
   transition: all 0.2s;
