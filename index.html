@@ -15,14 +15,18 @@
         <div class="avatar-placeholder">AG</div>
       </div>
       <h1 class="name">Andreu Guzman Vendrell</h1>
-      <p class="role">Programador / Desarrollador Web</p>
+      <p class="role" data-i18n="role">Programador / Desarrollador Web</p>
+
+      <div class="lang-toggle">
+        <button onclick="toggleLang()" id="langBtn">English</button>
+      </div>
 
       <div class="sidebar-section">
-        <h3>Contacto</h3>
+        <h3 data-i18n="contact">Contacto</h3>
         <ul class="contact-list">
           <li>
             <span class="icon">✉</span>
-            <span>aguve@hotmail.com</span>
+            <span>aguveone@gmail.com</span>
           </li>
           <li>
             <span class="icon">☏</span>
@@ -36,7 +40,7 @@
       </div>
 
       <div class="sidebar-section">
-        <h3>Habilidades Técnicas</h3>
+        <h3 data-i18n="skills">Habilidades Técnicas</h3>
         <div class="skill-list">
           <div class="skill-item">
             <span>HTML5, CSS, JS</span>
@@ -62,31 +66,35 @@
             <span>SQL, MySQL, MongoDB</span>
             <div class="progress"><div style="width:75%"></div></div>
           </div>
+          <div class="skill-item">
+            <span>Docker, Git, Github</span>
+            <div class="progress"><div style="width:75%"></div></div>
+          </div>
         </div>
       </div>
 
       <div class="sidebar-section">
-        <h3>Idiomas</h3>
+        <h3 data-i18n="languages">Idiomas</h3>
         <div class="lang-item">
-          <span>Catalán</span>
-          <span class="lang-level">Nativo</span>
+          <span data-i18n="lang_ca">Catalán</span>
+          <span class="lang-level" data-i18n="native">Nativo</span>
         </div>
         <div class="lang-item">
-          <span>Castellano</span>
-          <span class="lang-level">Nativo</span>
+          <span data-i18n="lang_es">Castellano</span>
+          <span class="lang-level" data-i18n="native2">Nativo</span>
         </div>
         <div class="lang-item">
-          <span>Inglés</span>
-          <span class="lang-level">Intermedio</span>
+          <span data-i18n="lang_en">Inglés</span>
+          <span class="lang-level" data-i18n="intermediate">Intermedio</span>
         </div>
         <div class="lang-item">
-          <span>Alemán</span>
-          <span class="lang-level">Principiante</span>
+          <span data-i18n="lang_de">Alemán</span>
+          <span class="lang-level" data-i18n="beginner">Principiante</span>
         </div>
       </div>
 
       <div class="sidebar-section">
-        <h3>IDEs</h3>
+        <h3 data-i18n="ides">IDEs</h3>
         <ul class="contact-list">
           <li>
             <span class="icon">⟨⟩</span>
@@ -108,28 +116,28 @@
       <section class="section">
         <div class="section-header">
           <div class="section-icon">▣</div>
-          <h2>Perfil</h2>
+          <h2 data-i18n="profile_title">Perfil</h2>
         </div>
-        <p class="profile-text">Programador con formación en Desarrollo de Aplicaciones Informáticas y amplia experiencia en desarrollo web con diversas tecnologías: PHP, Python, Java,JavaScript. Conocimientos en Machine Learning y Deep Learning. Experiencia trabajando con clientes de primer nivel como BBVA.</p>
+        <p class="profile-text" data-i18n="profile_text">Programador con formación en Desarrollo de Aplicaciones Informáticas y amplia experiencia en desarrollo web con diversas tecnologías: PHP, Python, Java,JavaScript. Conocimientos en Machine Learning y Deep Learning. Experiencia trabajando con clientes de primer nivel como BBVA.</p>
       </section>
 
       <section class="section">
         <div class="section-header">
           <div class="section-icon">▤</div>
-          <h2>Experiencia Profesional</h2>
+          <h2 data-i18n="experience_title">Experiencia Profesional</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador</h3>
+                <h3 data-i18n="job1_title">Programador</h3>
                 <span class="badge">2017</span>
               </div>
               <p class="company">Avanade</p>
               <ul>
-                <li>Desarrollo web con el framework Microsoft .NET, uso de WebForms, JS y bases de datos SQL Server</li>
-                <li>Proyecto para el banco BBVA</li>
+                <li data-i18n="job1_desc1">Desarrollo web con el framework Microsoft .NET, uso de WebForms, JS y bases de datos SQL Server</li>
+                <li data-i18n="job1_desc2">Proyecto para el banco BBVA</li>
               </ul>
             </div>
           </div>
@@ -137,13 +145,13 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador</h3>
+                <h3 data-i18n="job2_title">Programador</h3>
                 <span class="badge">2016</span>
               </div>
               <p class="company">Hemav</p>
               <ul>
-                <li>Desarrollo de aplicación de carga de datos de una API a la cache del proyecto para facilitar su acceso</li>
-                <li>Framework utilizado: Laravel 5, PHP</li>
+                <li data-i18n="job2_desc1">Desarrollo de aplicación de carga de datos de una API a la cache del proyecto para facilitar su acceso</li>
+                <li data-i18n="job2_desc2">Framework utilizado: Laravel 5, PHP</li>
               </ul>
             </div>
           </div>
@@ -151,13 +159,13 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador</h3>
+                <h3 data-i18n="job3_title">Programador</h3>
                 <span class="badge">2015</span>
               </div>
-              <p class="company">Por cuenta propia</p>
+              <p class="company" data-i18n="job3_company">Por cuenta propia</p>
               <ul>
-                <li>Desarrollo en PHP de aplicación para enlazar posibles vendedores y compradores dado un producto</li>
-                <li>Base de datos con SQL</li>
+                <li data-i18n="job3_desc1">Desarrollo en PHP de aplicación para enlazar posibles vendedores y compradores dado un producto</li>
+                <li data-i18n="job3_desc2">Base de datos con SQL</li>
               </ul>
             </div>
           </div>
@@ -165,13 +173,13 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador</h3>
+                <h3 data-i18n="job4_title">Programador</h3>
                 <span class="badge">2013 - 2014</span>
               </div>
               <p class="company">Tecnitek IT Solutions</p>
               <ul>
-                <li>Desarrollo de aplicación para gestionar la adjudicación de vacaciones de la empresa</li>
-                <li>Tecnologías: PHP, MySQL, HTML, CSS y JS</li>
+                <li data-i18n="job4_desc1">Desarrollo de aplicación para gestionar la adjudicación de vacaciones de la empresa</li>
+                <li data-i18n="job4_desc2">Tecnologías: PHP, MySQL, HTML, CSS y JS</li>
               </ul>
             </div>
           </div>
@@ -179,12 +187,12 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Administrador de Sistemas</h3>
+                <h3 data-i18n="job5_title">Administrador de Sistemas</h3>
                 <span class="badge">2010 - 2011</span>
               </div>
               <p class="company">Il·lustre Col·legi d'Advocats de Barcelona (ICAB)</p>
               <ul>
-                <li>Tareas de mantenimiento, corrección y configuración de los sistemas informáticos del ICAB</li>
+                <li data-i18n="job5_desc1">Tareas de mantenimiento, corrección y configuración de los sistemas informáticos del ICAB</li>
               </ul>
             </div>
           </div>
@@ -192,13 +200,13 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador</h3>
+                <h3 data-i18n="job6_title">Programador</h3>
                 <span class="badge">2010 - 2011</span>
               </div>
               <p class="company">SIGMA Gestión Universitaria</p>
               <ul>
-                <li>Desarrollo y mantenimiento de páginas web de universidades del estado español</li>
-                <li>Tecnologías: Java (backend), XML y SQL (base de datos)</li>
+                <li data-i18n="job6_desc1">Desarrollo y mantenimiento de páginas web de universidades del estado español</li>
+                <li data-i18n="job6_desc2">Tecnologías: Java (backend), XML y SQL (base de datos)</li>
               </ul>
             </div>
           </div>
@@ -206,12 +214,12 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Responsable de Turno</h3>
+                <h3 data-i18n="job7_title">Responsable de Turno</h3>
                 <span class="badge">2006 - 2007</span>
               </div>
               <p class="company">Interactive Games Solutions S.L.</p>
               <ul>
-                <li>Gestión y organización del Departamento Financiero</li>
+                <li data-i18n="job7_desc1">Gestión y organización del Departamento Financiero</li>
               </ul>
             </div>
           </div>
@@ -221,14 +229,14 @@
       <section class="section">
         <div class="section-header">
           <div class="section-icon">▥</div>
-          <h2>Formación</h2>
+          <h2 data-i18n="education_title">Formación</h2>
         </div>
         <div class="timeline">
           <div class="timeline-item">
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>CFGS Desarrollo de Aplicaciones Informáticas</h3>
+                <h3 data-i18n="edu1_title">CFGS Desarrollo de Aplicaciones Informáticas</h3>
                 <span class="badge">2009</span>
               </div>
               <p class="company">Institut Jaume Balmes, Barcelona</p>
@@ -238,7 +246,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Fullstack Bootcamp - Java</h3>
+                <h3 data-i18n="edu2_title">Fullstack Bootcamp - Java</h3>
                 <span class="badge">2026</span>
               </div>
               <p class="company">Fundación ONCE</p>
@@ -248,7 +256,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Desarrollo de aplicaciones móvil para iOS y Android con Flutter</h3>
+                <h3 data-i18n="edu3_title">Desarrollo de aplicaciones móvil para iOS y Android con Flutter</h3>
                 <span class="badge">2025</span>
               </div>
               <p class="company">SEPE</p>
@@ -258,7 +266,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programación, Estadística e IA</h3>
+                <h3 data-i18n="edu4_title">Programación, Estadística e IA</h3>
                 <span class="badge">2023</span>
               </div>
               <p class="company">Samsung Innovation Campus – Universidad de Málaga</p>
@@ -268,7 +276,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Deep Learning: Redes Neuronales en Python</h3>
+                <h3 data-i18n="edu5_title">Deep Learning: Redes Neuronales en Python</h3>
                 <span class="badge">2022</span>
               </div>
               <p class="company">UDEMI</p>
@@ -278,7 +286,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Machine Learning: Data Science en Python</h3>
+                <h3 data-i18n="edu6_title">Machine Learning: Data Science en Python</h3>
                 <span class="badge">2021</span>
               </div>
               <p class="company">UDEMI</p>
@@ -288,7 +296,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Python 3</h3>
+                <h3 data-i18n="edu7_title">Python 3</h3>
                 <span class="badge">2019</span>
               </div>
               <p class="company">UDEMI</p>
@@ -298,7 +306,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Desarrollo de aplicaciones web y diseño</h3>
+                <h3 data-i18n="edu8_title">Desarrollo de aplicaciones web y diseño</h3>
                 <span class="badge">2016</span>
               </div>
               <p class="company">AVBC - Formació i inserció laboral</p>
@@ -308,7 +316,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Aplicaciones web con C# Microsoft .NET</h3>
+                <h3 data-i18n="edu9_title">Aplicaciones web con C# Microsoft .NET</h3>
                 <span class="badge">2015</span>
               </div>
               <p class="company">Centre de Formació Luz TI</p>
@@ -318,7 +326,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Programador Entornos Host y Desarrollo de Aplicaciones</h3>
+                <h3 data-i18n="edu10_title">Programador Entornos Host y Desarrollo de Aplicaciones</h3>
                 <span class="badge">2014</span>
               </div>
               <p class="company">Luz TI</p>
@@ -328,7 +336,7 @@
             <div class="timeline-dot"></div>
             <div class="timeline-content">
               <div class="timeline-header">
-                <h3>Analista Programador FOAP</h3>
+                <h3 data-i18n="edu11_title">Analista Programador FOAP</h3>
                 <span class="badge">2013</span>
               </div>
               <p class="company">Centre d'estudis ParkerGroup</p>
@@ -340,13 +348,92 @@
       <section class="section">
         <div class="section-header">
           <div class="section-icon">✦</div>
-          <h2>Otros Datos</h2>
+          <h2 data-i18n="other_title">Otros Datos</h2>
         </div>
         <ul class="other-info-list">
-          <li>Permiso de conducir A2 y B</li>
+          <li data-i18n="driving_license">Permiso de conducir A2 y B</li>
         </ul>
       </section>
     </main>
   </div>
+  <script>
+    const translations = {
+      role: { es: 'Programador / Desarrollador Web', en: 'Programmer / Web Developer' },
+      contact: { es: 'Contacto', en: 'Contact' },
+      skills: { es: 'Habilidades Técnicas', en: 'Technical Skills' },
+      languages: { es: 'Idiomas', en: 'Languages' },
+      lang_ca: { es: 'Catalán', en: 'Catalan' },
+      lang_es: { es: 'Castellano', en: 'Spanish' },
+      lang_en: { es: 'Inglés', en: 'English' },
+      lang_de: { es: 'Alemán', en: 'German' },
+      native: { es: 'Nativo', en: 'Native' },
+      native2: { es: 'Nativo', en: 'Native' },
+      intermediate: { es: 'Intermedio', en: 'Intermediate' },
+      beginner: { es: 'Principiante', en: 'Beginner' },
+      ides: { es: 'IDEs', en: 'IDEs' },
+      profile_title: { es: 'Perfil', en: 'Profile' },
+      profile_text: { es: 'Programador con formación en Desarrollo de Aplicaciones Informáticas y amplia experiencia en desarrollo web con diversas tecnologías: PHP, Python, Java, JavaScript. Conocimientos en Machine Learning y Deep Learning. Experiencia trabajando con clientes de primer nivel como BBVA.', en: 'Software developer with a degree in Computer Applications Development and extensive experience in web development with various technologies: PHP, Python, Java, JavaScript. Knowledge in Machine Learning and Deep Learning. Experience working with top-tier clients such as BBVA.' },
+      experience_title: { es: 'Experiencia Profesional', en: 'Professional Experience' },
+      job1_title: { es: 'Programador', en: 'Programmer' },
+      job1_desc1: { es: 'Desarrollo web con el framework Microsoft .NET, uso de WebForms, JS y bases de datos SQL Server', en: 'Web development with Microsoft .NET framework, using WebForms, JS and SQL Server databases' },
+      job1_desc2: { es: 'Proyecto para el banco BBVA', en: 'Project for BBVA bank' },
+      job2_title: { es: 'Programador', en: 'Programmer' },
+      job2_desc1: { es: 'Desarrollo de aplicación de carga de datos de una API a la cache del proyecto para facilitar su acceso', en: 'Development of an application to load data from an API to the project cache for easier access' },
+      job2_desc2: { es: 'Framework utilizado: Laravel 5, PHP', en: 'Framework used: Laravel 5, PHP' },
+      job3_title: { es: 'Programador', en: 'Programmer' },
+      job3_company: { es: 'Por cuenta propia', en: 'Self-employed' },
+      job3_desc1: { es: 'Desarrollo en PHP de aplicación para enlazar posibles vendedores y compradores dado un producto', en: 'PHP development of an application to connect potential sellers and buyers for a given product' },
+      job3_desc2: { es: 'Base de datos con SQL', en: 'SQL database' },
+      job4_title: { es: 'Programador', en: 'Programmer' },
+      job4_desc1: { es: 'Desarrollo de aplicación para gestionar la adjudicación de vacaciones de la empresa', en: 'Development of an application to manage company vacation allocation' },
+      job4_desc2: { es: 'Tecnologías: PHP, MySQL, HTML, CSS y JS', en: 'Technologies: PHP, MySQL, HTML, CSS and JS' },
+      job5_title: { es: 'Administrador de Sistemas', en: 'System Administrator' },
+      job5_desc1: { es: 'Tareas de mantenimiento, corrección y configuración de los sistemas informáticos del ICAB', en: 'Maintenance, troubleshooting and configuration tasks for ICAB\'s computer systems' },
+      job6_title: { es: 'Programador', en: 'Programmer' },
+      job6_desc1: { es: 'Desarrollo y mantenimiento de páginas web de universidades del estado español', en: 'Development and maintenance of websites for Spanish universities' },
+      job6_desc2: { es: 'Tecnologías: Java (backend), XML y SQL (base de datos)', en: 'Technologies: Java (backend), XML and SQL (database)' },
+      job7_title: { es: 'Responsable de Turno', en: 'Shift Manager' },
+      job7_desc1: { es: 'Gestión y organización del Departamento Financiero', en: 'Management and organization of the Financial Department' },
+      education_title: { es: 'Formación', en: 'Education' },
+      edu1_title: { es: 'CFGS Desarrollo de Aplicaciones Informáticas', en: 'HND in Computer Applications Development' },
+      edu2_title: { es: 'Fullstack Bootcamp - Java', en: 'Fullstack Bootcamp - Java' },
+      edu3_title: { es: 'Desarrollo de aplicaciones móvil para iOS y Android con Flutter', en: 'Mobile app development for iOS and Android with Flutter' },
+      edu4_title: { es: 'Programación, Estadística e IA', en: 'Programming, Statistics and AI' },
+      edu5_title: { es: 'Deep Learning: Redes Neuronales en Python', en: 'Deep Learning: Neural Networks in Python' },
+      edu6_title: { es: 'Machine Learning: Data Science en Python', en: 'Machine Learning: Data Science in Python' },
+      edu7_title: { es: 'Python 3', en: 'Python 3' },
+      edu8_title: { es: 'Desarrollo de aplicaciones web y diseño', en: 'Web application development and design' },
+      edu9_title: { es: 'Aplicaciones web con C# Microsoft .NET', en: 'Web applications with C# Microsoft .NET' },
+      edu10_title: { es: 'Programador Entornos Host y Desarrollo de Aplicaciones', en: 'Host Environments Programmer and Application Development' },
+      edu11_title: { es: 'Analista Programador FOAP', en: 'FOAP Programmer Analyst' },
+      other_title: { es: 'Otros Datos', en: 'Other Information' },
+      driving_license: { es: 'Permiso de conducir A2 y B', en: 'Driving license A2 and B' }
+    };
+
+    let currentLang = localStorage.getItem('lang') || 'es';
+
+    function applyLang(lang) {
+      document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[key] && translations[key][lang]) {
+          if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+            el.placeholder = translations[key][lang];
+          } else {
+            el.textContent = translations[key][lang];
+          }
+        }
+      });
+      document.documentElement.lang = lang;
+      document.getElementById('langBtn').textContent = lang === 'es' ? 'English' : 'Castellano';
+      localStorage.setItem('lang', lang);
+    }
+
+    function toggleLang() {
+      currentLang = currentLang === 'es' ? 'en' : 'es';
+      applyLang(currentLang);
+    }
+
+    applyLang(currentLang);
+  </script>
 </body>
 </html>
